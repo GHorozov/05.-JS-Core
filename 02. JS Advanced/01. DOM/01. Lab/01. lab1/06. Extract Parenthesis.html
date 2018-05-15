@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <p id="content">
+        This is text (alcoholc drink). More text (rakia).
+    </p>
+    <script>
+        function extractText(id) {
+            let text = document.getElementById(id).textContent;
+            let regex = /\((.+?)\)/g;
+            let match = regex.exec(text);
+
+            let result= [];
+            while (match){
+                result.push(match[1]);
+                match = regex.exec(text);
+            }
+
+            return result.join('; ');
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

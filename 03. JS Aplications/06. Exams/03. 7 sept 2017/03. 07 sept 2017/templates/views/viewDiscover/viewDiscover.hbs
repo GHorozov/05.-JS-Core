@@ -1,0 +1,19 @@
+{{> header}}
+{{> navigation}}
+
+<section id="viewDiscover">
+    <div class="content">
+        <div class="chirps">
+            <h2 class="titlebar">Discover</h2>
+            <div id="userlist">
+                {{#each users}}
+                    {{> user}}
+                    {{else}}
+                        <p>No users in database.</p>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> footer}}

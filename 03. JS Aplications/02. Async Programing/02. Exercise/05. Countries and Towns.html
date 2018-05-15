@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .upcoming {
+            display: inline-block;
+            margin: 1.5em;
+        }
+
+        .label {
+            margin-top: 1em;
+            font-size: 1.5em;
+            background-color: white;
+            font-weight: 200;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<button id="btnLoadCountries">Load Countries</button>
+<button id="btnLoadTowns">Load options</button>
+<select id="select-countries"></select>
+<button id="btnViewTowns" class="upcoming">View towns</button>
+<div id="#errors"></div>
+<div>
+    <label class="label">name:</label>
+    <input id="nameFieldTown" type="text">
+    <button id="btnAddTown">Add Town</button>
+</div>
+<div>
+    <label class="label">name:</label>
+    <input id="nameField" type="text">
+    <button id="btnAddCountry">Add Country</button>
+</div>
+<h1>All Countries</h1>
+<ul id="post-countries"></ul>
+
+<h1>All towns in selected country</h1>
+<ul id="post-towns"></ul>
+
+<script src="05. Countries and Towns.js"></script>
+<script>
+    solution();
+</script>
+</body>
+</html>
